@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class HomeController {
 
     @GetMapping("/main")
-    public String loginPage(@RequestParam(name="logout", required=false) String logout,
+    public String loginMain(@RequestParam(name="logout", required=false) String logout,
                             HttpSession session, Model model) {
 
         if (logout != null) {
